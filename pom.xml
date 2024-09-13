@@ -7,7 +7,7 @@
     <groupId>com.jd.sql.analysis</groupId>
     <artifactId>sql-analysis-build</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <modules>
         <module>sql-analysis-samples</module>
         <module>sql-analysis</module>
@@ -129,10 +129,15 @@
     </build>
 
     <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <name>Nexus Release Repository</name>
+            <url>https://packages.aliyun.com/maven/repository/2224468-release-XB5Uo1/</url>
+        </repository>
         <snapshotRepository>
-            <id>snapshots</id>
-            <name>libs-snapshots</name>
-            <url>http://artifactory.jd.com/libs-snapshots-local</url>
+            <id>rdc-snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>https://packages.aliyun.com/maven/repository/2224468-snapshot-k4Zjqc/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
